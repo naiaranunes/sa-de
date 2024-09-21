@@ -4,36 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="style.css">
+   <script src="https://code.jquery.com;jquery-3.6.0.min.js"></script>
     <title>saúde e cuidados pessoais</title>
 </head>
 <body>
-    <header>
-        <h1>Seja bem-vindo ao nosso site de cuidados pessoais</h1>
-        <section class="secao-principaç">
-            <h2>
-                Por que o Autocuidado é importante?
-            </h2>
-            <p>
-                Cuidar de se mesmo é o primeiro passo para uma vida mais 
-                saudável e mais equilibrada. Por isso, realize pequenas mudanças no seu estilo de vida para que garantir uma boa saúde física e mental.🧘🏻‍♂️
-            </p>
-            <h2>
-                Como praticar o autocuidado?
-            </h2>
-            <p>
-                No nosso site você encontrara dicas e orientações práticas. Desde o cuidado com a pele, cabelos, corpo e saude mental. Com os nossos especialistas fundamnetados atraves da ciência. 🔬
-            </p>
-            <p>
-                <strong>
-                    Comece já! explore nossas seções e tranforme sua vida!
-                </strong>
-            </p>
-        </section>
-        <footer>
+    <!--Menu hamburguer-->
+    <nav class="navbar">
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#alimentacao">Alimentação</a></li>
+            <li><a href="#exercicios">Exercicios</a></li>
+            <li><a href="#saude-mental">Saúde Mental</a></li>
+            <li><a href="#imc">Calculadora de IMC</a></li>
+            
+        </ul>
+    </nav>
+    <section id="inicio">
+        <header class="main-header">
+            <h1>Seja bem-vindo ao nosso site de cuidados pessoais</h1>
+        </header>
+            <section class="content-section">
+                <h2>
+                    Por que o Autocuidado é importante?
+                </h2>
+                <p>
+                    Cuidar de se mesmo é o primeiro passo para uma vida mais 
+                    saudável e mais equilibrada. Por isso, realize pequenas mudanças no seu estilo de vida para que garantir uma boa saúde física e mental.🧘🏻‍♂️
+                </p>
+                <h2>
+                    Como praticar o autocuidado?
+                </h2>
+                <p>
+                    No nosso site você encontrara dicas e orientações práticas. Desde o cuidado com a pele, cabelos, corpo e saude mental. Com os nossos especialistas fundamnetados atraves da ciência. 🔬
+                </p>
+                <p>
+                    <strong>
+                        Comece já! explore nossas seções e tranforme sua vida!
+                    </strong>
+                </p>
+            </section>
+
+    </section>
+            <section id="alimentação">
+                <h2>Alimentação</h2>
+                <p>Uma boa Alimentação é importante para manter o corpo saudável!</p>
+            </section>
+
+            <section id="exercicios">
+                <h2>Exercicios</h2>
+                <p>
+                    Manter o corpo ativo é uma das formas mais eficazes de garantir saúde física e mental.
+                </p>
+            </section>
+            <section id="saude-mental">
+                <h2>Saúde Mental</h2>
+                <p>Cuida da mente é tao importante quanto cuidar do corpo. Por isso encontre práticas que te ajudem como meditação e tecnicas de relaxamento. </p>
+            </section>
+            <section id="imc">
+                <h2>Calculadora IMC</h2>
+                <p>descubra seu índice de massa corporal com a nossa calculadora. </p>
+                <form action="imc-form">
+                    <label for="peso">Peso (Kg):</label>
+                    <input type="number" id="peso" name="peso" step="0.1" placeholder="ex:70.5" required><br>
+                    <label for="peso">Altura (metros):</label>
+                    <input type="number" id="altura" name="altura" step="0.01" placeholder="ex:1.75" required><br>
+                    <button type="button" onclick="calcular IMC()">Calcular IMC</button>
+                </form>
+                <div id="resultado"></div>
+            </section>
+    
+        <footer class="main-footer">
             <p>
                 &copy: 2024 By Naiara Nunes 🖖🏻
             </p>
         </footer>
-    </header>
+        <script src="script.js"></script>
+        
+  
 </body>
 </html>
